@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+
+    <groupId>com.salaboy</groupId>
+    <artifactId>shopping-app</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Shopping App</name>
+    <properties>
+        <version.wildfly-swarm>1.0.0.Alpha6-SNAPSHOT</version.wildfly-swarm>
+        <maven.min.version>3.2.3</maven.min.version>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+    </properties>
+
+    <modules>
+        
+        <module>shopping-cart-model</module>
+        <module>shopping-cart-kjar</module>
+        <module>shopping-cart-services</module>
+        <module>warehouse-model</module>
+        <module>warehouse-services</module>
+	<module>shopping-app-ui</module>
+    </modules>
+  
+    <repositories>
+        <repository>
+            <id>jboss-public-repository-group</id>
+            <name>JBoss Public Repository Group</name>
+            <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+        </repository>
+    </repositories>
+   
+
+</project>

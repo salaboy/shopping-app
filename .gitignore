@@ -10,3 +10,10 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/shopping-app-ui/nbproject/
+/shopping-cart-model/target/
+/warehouse-model/target/
+/shopping-cart-kjar/target/
+/shopping-cart-services/target/
+/warehouse-services/target/
+/shopping-app-ui/target/
