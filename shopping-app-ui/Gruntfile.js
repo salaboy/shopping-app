@@ -200,8 +200,8 @@ module.exports = function (grunt) {
       app: {
         src: ['<%= yeoman.app %>/index.html'],
         ignorePath:  /\.\.\//
-      },
-   /*   test: {
+      }
+   /* ,  test: {
         devDependencies: true,
         src: '<%= karma.unit.configFile %>',
         ignorePath:  /\.\.\//,
@@ -442,7 +442,7 @@ module.exports = function (grunt) {
     //    configFile: 'test/karma.conf.js',
     //    singleRun: true
     //  }
-    }
+    //}
   });
 
 
@@ -471,8 +471,8 @@ module.exports = function (grunt) {
     'wiredep',
     'concurrent:test',
     'autoprefixer',
-    'connect:test',
-    //'karma'
+    'connect:test'
+    //,'karma'
   ]);
 
   grunt.registerTask('build', [
