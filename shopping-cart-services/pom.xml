@@ -95,8 +95,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.3</version>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration> 
             </plugin>
             
@@ -107,7 +107,7 @@
                 <configuration>
                     <mainClass>com.salaboy.shopping.cart.App</mainClass>
                     <properties>
-                        <jboss.socket.binding.port-offset>4</jboss.socket.binding.port-offset>
+                        <swarm.port.offset>4</swarm.port.offset>
                     </properties>
                 </configuration>
                 <executions>
