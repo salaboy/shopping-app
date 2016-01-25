@@ -1,26 +1,26 @@
-#Steps
-install npm \
+# Steps
+## Install npm
 
 You need to get ruby and compass installed in your operating system.. in Mac OSX:
 
-brew install ruby \
+    brew install ruby
 
-gem install compass \
+    gem install compass
 
-then: \
+then:
 
+    #to generate node_modules
+    npm install
+    npm install -g bower
+    #to generate bower packages
+    bower install
+    npm install -g grunt-cli
 
-npm install (to generate node_modules) \
+## Running the application
 
-npm install -g bower \
+Run:
 
-bower install (to generate bower packages) \ 
-
-
-npm install -g grunt-cli \
-
-To RUN: 
-grunt serve
+    grunt serve
 
 
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
