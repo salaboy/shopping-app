@@ -17,3 +17,5 @@ hs_err_pid*
 /shopping-cart-services/target/
 /warehouse-services/target/
 /shopping-app-ui/target/
+
+target/

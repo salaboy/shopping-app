@@ -23,6 +23,7 @@
         <module>warehouse-model</module>
         <module>warehouse-services</module>
 	<module>shopping-app-ui</module>
+	<module>external-dockers</module>
     </modules>
   
     <repositories>
