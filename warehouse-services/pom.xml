@@ -20,9 +20,8 @@
         <junit.version>4.11</junit.version>
         <cdi.version>1.2</cdi.version>
         <docker.from>jboss/base-jdk:8</docker.from> 
-        <docker.maven.plugin.version>0.13.5</docker.maven.plugin.version>
         <docker.assemblyDescriptorRef>artifact</docker.assemblyDescriptorRef>
-        <docker.image>salaboy/warehouse-services:latest</docker.image>
+        <docker.image>shopapp/warehouse-services:latest</docker.image>
     </properties>
     
 
@@ -106,7 +105,6 @@
                                         <arg>-Dkie.maven.settings.custom=/opt/wildfly-swarm/settings.xml</arg>
                                         <arg>-jar</arg>
                                         <arg>/opt/wildfly-swarm/warehouse-services.jar</arg>
-                                       
                                     </exec>
                                 </entryPoint>
                                 <assembly>
@@ -135,16 +133,6 @@
                                     <basedir>/opt/wildfly-swarm</basedir>  
                                 </assembly>
                             </build>
-                            <run>
-                                <ports>
-                                    <!-- Map container port 8080 to a dynamical port -->
-                                    <port>${swarm.port}:8080</port>
-                                </ports>
-                                <log>
-                                    <color>yellow</color>
-                                    <prefix>SWARM</prefix>
-                                </log>
-                            </run>
                         </image>
                     </images>
                     

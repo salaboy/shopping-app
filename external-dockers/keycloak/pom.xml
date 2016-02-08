@@ -11,7 +11,6 @@
   <artifactId>shopping-cart-docker-keycloak</artifactId>
 
   <properties>
-    <docker.maven.plugin.version>0.13.5</docker.maven.plugin.version>
   </properties>
 
   <build>

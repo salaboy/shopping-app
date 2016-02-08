@@ -17,6 +17,7 @@
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<docker.image>shopapp/shopping-app-ui:latest</docker.image>
     </properties>
     
     <dependencies>
@@ -81,7 +82,7 @@
             <plugin>
                 <groupId>org.jolokia</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
-                <version>0.13.2</version>
+                <version>${docker.maven.plugin.version}</version>
                 <configuration>
                     <!-- Global configuration. -->
                     
@@ -97,7 +98,7 @@
 
            
                         <image>
-                            <name>salaboy/shopping-app-ui</name>
+                            <name>${docker.image}</name>
                             <alias>shopping-app-ui-${project.version}</alias>
                             
                             <build>

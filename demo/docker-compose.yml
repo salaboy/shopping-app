@@ -1,0 +1,27 @@
+keycloak:
+ container_name: shopapp-keycloak
+ hostname: shopapp-keycloak:latest
+ image: shopapp/keycloak
+ ports:
+   - "9090:8080"
+
+warehouse-services:
+ container_name: shopapp-warehouse-services
+ hostname: patient-warehouse-services
+ image: shopapp/warehouse-services:latest
+ ports:
+   - "8083:8083"
+
+shopping-cart-services:
+ container_name: shopapp-shopping-cart-services
+ hostname: shopapp-shopping-cart-services
+ image: shopapp/shopping-cart-services:latest
+ ports:
+   - "8084:8084"
+
+#shopping-app-ui:
+# container_name: shopapp-shopping-app-ui
+# hostname: shopapp-shopping-app-ui
+# image: shopapp/shopping-app-ui:latest
+# ports:
+#   - "9093:8080"
